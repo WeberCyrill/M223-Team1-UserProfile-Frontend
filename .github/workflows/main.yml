@@ -11,4 +11,4 @@ jobs:
           secret_secret: ${{ secrets.SECRET_SECRET_STRING}}
         run: echo $secret_secret
       - name: run run.sh
-        run: ./.github/run.sh
+        run: bash .github/run.sh
