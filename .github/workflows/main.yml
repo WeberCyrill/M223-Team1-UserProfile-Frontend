@@ -10,7 +10,7 @@ jobs:
         env:
           secret_secret: ${{ secrets.SECRET_SECRET_STRING}}
         run: echo $secret_secret
+      - name: Checkout repository
+        uses: actions/checkout@v3
       - name: run run.sh
-        run: |
-          chmod +x run.sh
-          run.sh
+        run: ./run.sh
