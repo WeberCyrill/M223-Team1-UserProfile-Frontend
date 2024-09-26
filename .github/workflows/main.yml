@@ -10,6 +10,9 @@ jobs:
         env:
           secret_secret: ${{ secrets.SECRET_SECRET_STRING}}
         run: echo $secret_secret
+  bash-test:
+    runs-on: ubuntu-latest
+    steps:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: run run.sh
