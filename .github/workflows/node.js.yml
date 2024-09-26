@@ -26,6 +26,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
           cache-dependency-path: "OurSpace-frontend/*"
+      - run: cd OurSpace-frontend
       - run: yarn install --frozen-lockfile
       - run: yarn run build --if-present
       - run: yarn test
