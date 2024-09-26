@@ -6,3 +6,7 @@ jobs:
     steps:
       - name: Print "Hello World"
         run: echo "Hello World"
+      - name: Print secret
+        env:
+          secret_secret: ${{ secrets.SECRET_SECRET_STRING}}
+        run: echo $secret_secret
