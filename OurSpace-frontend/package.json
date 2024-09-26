@@ -45,7 +45,7 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts build",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -85,5 +85,8 @@
     "fallback": {
       "crypto": "require.resolve('crypto-js')"
     }
+  },
+  "resolutions": {
+    "caniuse-lite": "1.0.30001632"
   }
 }
