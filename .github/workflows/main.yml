@@ -13,4 +13,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: run run.sh
-        run: ./run.sh
+        run: |
+          chmod +x run.sh
+          ./run.sh
