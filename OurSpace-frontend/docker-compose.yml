@@ -1,31 +1,30 @@
 version: '3.7'
 
 services:
-  frontend:
+  frontend: 
     restart: unless-stopped
-    image: #todo
-    container_name: frontend
+    image: cuerillius/m223-team1-userprofile-frontend:main
+    container_name: ourspace-userprofile-frontend
     depends_on:
       - backend
     ports:
-      - 3000:80
+      - 8901:80
   backend:
     restart: unless-stopped
-    image: #todo
-    container_name: backend
-    ports:
-      - 8080:8080
-    environment:
-      -  #env
+    image: cuerillius/ourspace-backend:1.3
+    container_name: ourspace-userprofile-backend
     depends_on:
       - db
+    environment:
+      - HOSTNAME=ourspace-userprofile-db
   db:
     restart: unless-stopped
-    image: 'postgres:10-alpine'
-    container_name: db
-    ports:
-      - '5432:5432'
+    image: 'postgres:10'
+    container_name: ourspace-userprofile-db
+      # ports:
+      # - '5432:5432'
     environment:
       POSTGRES_PASSWORD: 'postgres'
       POSTGRES_USER: 'postgres'
       POSTGRES_DB: 'postgres'
+
