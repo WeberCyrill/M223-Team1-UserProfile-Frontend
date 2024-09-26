@@ -1,6 +1,6 @@
- # Will create a node environment in the container
-FROM node:16-alpine AS builder
- # Will create a directory app and switch to that directory
+# Will create a node environment in the container
+FROM node:22.9-alpine AS builder
+# Will create a directory app and switch to that directory
 WORKDIR /app
 # Copies package.json file and soruce code to /app directory
 COPY package.json .
