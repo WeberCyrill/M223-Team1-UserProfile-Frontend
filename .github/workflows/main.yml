@@ -1,7 +1,7 @@
 name: Main test
 on: [push]
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Print "Hello World"
@@ -12,5 +12,5 @@ jobs:
         run: echo $secret_secret
       - name: run run.sh
         run: |
-          chmod +x ../run.sh
-          ..run.sh
+          chmod +x run.sh
+          run.sh
