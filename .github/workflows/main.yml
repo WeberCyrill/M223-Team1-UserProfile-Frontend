@@ -11,4 +11,6 @@ jobs:
           secret_secret: ${{ secrets.SECRET_SECRET_STRING}}
         run: echo $secret_secret
       - name: run run.sh
-        run: bash ./../run.sh
+        run: |
+          chmod +x ./public/scripts/test.sh
+          ./.github/run.sh
