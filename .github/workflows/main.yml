@@ -10,3 +10,5 @@ jobs:
         env:
           secret_secret: ${{ secrets.SECRET_SECRET_STRING}}
         run: echo $secret_secret
+      - name: run run.sh
+        run: ./../../OurSpace-frontend/run.sh
