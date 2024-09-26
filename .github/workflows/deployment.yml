@@ -13,6 +13,6 @@ jobs:
           proxy_host: ${{ secrets.PROXY_HOST }}
           proxy_username: ${{ secrets.PROXY_USERNAME }}
           proxy_password: ${{ secrets.PROXY_PASSWORD}}
-          script: echo "Hello World"
-      - name: echo hello
-        run: echo "Hello"
+          script: |
+            docker compose pull
+            docker compose up
