@@ -3,7 +3,7 @@ on:
   workflow_run:
     workflows: ["Docker"]
     branches: [main]
-    types: 
+    types:
       - completed
 jobs:
   deploy:
