@@ -1,3 +1,4 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=nypag-1_uk-223&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=nypag-1_uk-223)
 
 # M223 Team1 UserProfile Frontend
 
