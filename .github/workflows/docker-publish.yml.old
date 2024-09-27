@@ -7,7 +7,7 @@ name: Docker
 
 on:
   workflow_run:
-    workflows: ["Node"]
+    workflows: ["Node", "Sonar"]
     branches: [main]
     types:
       - completed
